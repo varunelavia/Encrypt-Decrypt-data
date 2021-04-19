@@ -7,16 +7,17 @@
   * ##### Example : 
     ![](https://raw.githubusercontent.com/varunelavia/Encrypt-Decrypt-data/main/Key-List-v2.png)
     ###### In above image, the key id is `2EAF3A12C4F47AFFDA376C08004E197503198231`
+* #### Export keys :
+  * ##### To export public key to a file, run : `gpg --output public.pem --export --armor --Key-ID--`
+  * ##### To export private key to a file, run : `gpg --output private.pem --export-secret-key --armor --Key-ID--` this is not recommended and should be done at own risk. Do keep private key at a safe place.
 
-* ##### To export public key to a file, run : `gpg --output public.pem --export --armor --Key-ID--`
+* #### Encrypt Text :
+  * ##### To encrypt a text, run : `echo "<Secret Message>" | gpg --encrypt --armor --output <filename>.txt -r <recipient email address>`
+  * ##### Example : `echo "This is my Secret, username:hello, password:world" | gpg --encrypt --armor --output my_encrypted_secret.txt -r varunelavia@gmail.com`
 
-* ##### To export private key to a file, run : `gpg --output private.pem --export-secret-key --armor --Key-ID--` this is not recommended and should be done at own risk. Do keep private key at a safe place.
-
-* ##### To encrypt a text, run : `echo "<Secret Message>" | gpg --encrypt --armor --output <filename>.txt -r <recipient email address>`
-* ##### Example : `echo "This is my Secret, username:hello, password:world" | gpg --encrypt --armor --output my_encrypted_secret.txt -r varunelavia@gmail.com`
-
-* ##### To encrypt a file (it could be anything, txt, png, mp3, mp4, pdf, doc, xls etc), run : `gpg --encrypt --armor --output <filename>.txt -r varunelavia@gmail.com <File to encrypt>`
-* ##### Example : `gpg --encrypt --armor --output my-important-image.txt -r varunelavia@gmail.com My-Important-Image.png`
+* #### Encrypt File :
+  * ##### To encrypt a file (it could be anything, txt, png, mp3, mp4, pdf, doc, xls etc), run : `gpg --encrypt --armor --output <filename>.txt -r varunelavia@gmail.com <File to encrypt>`
+  * ##### Example : `gpg --encrypt --armor --output my-important-image.txt -r varunelavia@gmail.com My-Important-Image.png`
 
 * ##### To decrypt a file, run : `gpg --decrypt --output <output filename> <encrypted filename>.txt`
 
