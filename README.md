@@ -25,3 +25,7 @@
 ##### To decrypt a file, run : `gpg --decrypt --output <output filename> <encrypted filename>.txt`
 
 ##### Example : `gpg --decrypt --output My-Secret-Image.png my-important-image.txt`
+
+##### To delete public key, run : `gpg --delete-keys <key id>`
+##### To delete private key, run : `gpg --delete-secret-keys <key id>`
+###### Note : if you attempt to delete public key first and if associated private key is on your machine then deletion will fail. You need to delete private key first and then the public key.
