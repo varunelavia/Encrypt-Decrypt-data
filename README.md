@@ -29,3 +29,6 @@
 ##### To delete public key, run : `gpg --delete-keys <key id>`
 ##### To delete private key, run : `gpg --delete-secret-keys <key id>`
 ###### Note : if you attempt to delete public key first and if associated private key is on your machine then deletion will fail. You need to delete private key first and then the public key.
+
+##### To import public or private key, run : `gpg --import <filename>`
+##### Example : `gpg --import public.pem`, `gpg --import private.pem`
