@@ -1,6 +1,6 @@
 # Encrypt-Decrypt-data
 
-##### To Generate gpg keypair, run : `gpg --generate-key` and follow the instructions
+* ##### <ins>To Generate gpg keypair, run : `gpg --generate-key` and follow the instructions</ins>
 
 ##### To list all public keys, run : `gpg -k`
 
