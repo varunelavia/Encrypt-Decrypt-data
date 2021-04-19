@@ -19,13 +19,13 @@
   * ##### To encrypt a file (it could be anything, txt, png, mp3, mp4, pdf, doc, xls etc), run : `gpg --encrypt --armor --output <filename>.txt -r varunelavia@gmail.com <File to encrypt>`
   * ##### Example : `gpg --encrypt --armor --output my-important-image.txt -r varunelavia@gmail.com My-Important-Image.png`
 
-* ##### To decrypt a file, run : `gpg --decrypt --output <output filename> <encrypted filename>.txt`
-
-* ##### Example : `gpg --decrypt --output My-Secret-Image.png my-important-image.txt`
-
-* ##### To delete public key, run : `gpg --delete-keys <key id>`
-* ##### To delete private key, run : `gpg --delete-secret-keys <key id>`
-* ###### Note : if you attempt to delete public key first and if associated private key is on your machine then deletion will fail. You need to delete private key first and then the public key.
-
-* ##### To import public or private key, run : `gpg --import <filename>`
-* ##### Example : `gpg --import public.pem`, `gpg --import private.pem`
+* #### Decrypt Text or File :
+  * ##### To decrypt a text or file, run : `gpg --decrypt --output <output filename> <encrypted filename>.txt`
+  * ##### Example : `gpg --decrypt --output My-Secret-Image.png my-important-image.txt`
+* #### Delete Keys :
+  * ##### To delete public key, run : `gpg --delete-keys <key id>`
+  * ##### To delete private key, run : `gpg --delete-secret-keys <key id>`
+  * ###### Note : if you attempt to delete public key first and if associated private key is on your machine then deletion will fail. You need to delete private key first and then the public key.
+* #### Import Keys :
+  * ##### To import public or private key, run : `gpg --import <filename>`
+  * ##### Example : `gpg --import public.pem`, `gpg --import private.pem`
