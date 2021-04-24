@@ -16,7 +16,7 @@
   * ##### Example : `echo "This is my Secret, username:hello, password:world" | gpg --encrypt --armor --output my_encrypted_secret.txt -r varunelavia@gmail.com`
 
 * #### Encrypt File :
-  * ##### To encrypt a file (it could be anything, txt, png, mp3, mp4, pdf, doc, xls etc), run : `gpg --encrypt --armor --output <filename>.txt -r varunelavia@gmail.com <File to encrypt>`
+  * ##### To encrypt a file (it could be anything, txt, png, mp3, mp4, pdf, doc, xls etc), run : `gpg --encrypt --armor --output <filename>.txt -r <recipient email address> <File to encrypt>`
   * ##### Example : `gpg --encrypt --armor --output my-important-image.txt -r varunelavia@gmail.com My-Important-Image.png`
 
 * #### Decrypt Text or File :
